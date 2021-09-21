@@ -1,6 +1,5 @@
 # Assignment1-Python
-- Title
-- Filtering out top N cryptocurrencies by market capitalization using Pycoingecko and pandas
+- Title: Filtering out top N cryptocurrencies by market capitalization using Pycoingecko and pandas
 - Installation
 In order to use this programm you must consider installing Pycoingecko and pandas libraries
 pip install pycoingecko
