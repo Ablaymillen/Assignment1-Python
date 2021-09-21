@@ -1,0 +1,3 @@
+Prior install pycoingecko and pandas libraries 
++ pip install pandas
++ pip install pycoingecko
