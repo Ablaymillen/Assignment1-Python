@@ -5,14 +5,14 @@
 In order to use this programm you must consider installing Pycoingecko and pandas libraries
 pip install pycoingecko
 pip install pandas
--  Usage
-to read data from api use read_API function
+-Usage
+To read data from api use read_API function
 read_API(requested_json, number_of_rows)
 Usage examples:
 read_API(requested_json= request, number_of_rows=10)
-this function will print out top 10 crypto currencies by their market capitalization place
+This function will print out top 10 crypto currencies by their market capitalization place
 
-to store data in the CSV format for further observation and analysis use
+To store data in the CSV format for further observation and analysis use
 store_data(data_frame)
 Usage examples:
 Either store data retrieved from the read_API function to another variable or directly pass it to the store_data() funciton
