@@ -2,8 +2,8 @@
 - Title: Filtering out top N cryptocurrencies by market capitalization using Pycoingecko and pandas
 - Installation
 In order to use this programm you must consider installing Pycoingecko and pandas libraries
-pip install pycoingecko
-pip install pandas
+- pip install pycoingecko
+- pip install pandas
 - Usage
 To read data from api use read_API function
 read_API(requested_json, number_of_rows)
