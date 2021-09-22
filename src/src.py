@@ -1,9 +1,12 @@
 import pandas as pd
 from pycoingecko import CoinGeckoAPI
 
+#Getting data from coingecko API
+cg = CoinGeckoAPI()
+report = cg.get_coins_markets(vs_currency= "usd")
 #Reading json file from API using pandas
 #Sorting values in descending order based on Market cap.
-def read_API(req, num_rows):
+def read_API(req= report, num_rows):
     coin_df = pd.DataFrame.from_records(req)
     coin_df = coin_df[["name", "current_price", "market_cap"]]
     coin_df = coin_df.sort_values(by="market_cap", ascending=False)
@@ -19,11 +22,8 @@ def read_API(req, num_rows):
 def store_data(data_frame):
     data_frame.to_csv("crypto_top.csv", index=False)
     
-#Getting data from coingecko API
-cg = CoinGeckoAPI()
-report = cg.get_coins_markets(vs_currency= "usd")
-data_frame = read_API(report, int(input("Enter number of rows: ")))
-store_data(data_frame)
+
+
 
 
 
