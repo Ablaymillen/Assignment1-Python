@@ -1,3 +1,4 @@
-Prior install pycoingecko and pandas libraries using following commands in your terminal
+Prior install pycoingecko, sys and pandas libraries using following commands in your terminal
 + pip install pandas
 + pip install pycoingecko
++ pip install sys
