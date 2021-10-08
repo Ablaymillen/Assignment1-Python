@@ -6,7 +6,7 @@ cg = CoinGeckoAPI()
 report = cg.get_coins_markets(vs_currency= "usd")
 #Reading json file from API using pandas
 #Sorting values in descending order based on Market cap.
-def read_API(req= report, num_rows):
+def read_API(req= report, num_rows=100):
     coin_df = pd.DataFrame.from_records(req)
     coin_df = coin_df[["name", "current_price", "market_cap"]]
     coin_df = coin_df.sort_values(by="market_cap", ascending=False)
